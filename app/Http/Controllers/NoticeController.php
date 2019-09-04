@@ -57,7 +57,7 @@ class NoticeController extends Controller
         $user->save($request->all());
 
         // return $request->all();
-        return redirect()->back()->with('message', 'Thank you for subscribing. we will let you know once we\'re ready!');
+        return redirect()->back()->withInput($request->input())->with('message', 'Thank you for subscribing. we will let you know once we\'re ready!');
     }
 
     /**

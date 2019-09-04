@@ -1,0 +1,288 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+
+    @include respond(phone) {
+        font-size: 56.25%; // 1rem = 9px; 9px / 16px = 56.25%
+    }
+}
+
+.hero {
+    height: 35rem;
+    background: #3F51B5;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+
+    .subtitle {
+        font-size: 4.5rem;
+        font-weight: 400;
+        margin-top: 8rem;
+
+        @include respond(phone) {
+            font-size: 3rem; // 1rem = 9px; 9px / 16px = 56.25%
+        }
+    }
+
+    .motto {
+        font-size: 2rem;
+        font-weight: 100;
+        margin-top: 1rem;
+
+        @include respond(phone) {
+            font-size: 2rem; // 1rem = 9px; 9px / 16px = 56.25%
+            text-align: center;
+            padding: 0 1rem;
+        }
+
+        &__distributor {
+            font-weight: 400;
+        }
+
+        &__reseller {
+            font-weight: 400;
+        }
+    }
+
+    .btn-get-started {
+        margin-top: 8rem;
+        -webkit-box-shadow: -4px 11px 16px -4px rgba(0,0,0,0.75);
+        -moz-box-shadow: -4px 11px 16px -4px rgba(0,0,0,0.75);
+        box-shadow: -4px 11px 16px -4px rgba(0,0,0,0.75);
+        min-width: 10rem;
+    }
+
+}
+
+.main {
+    min-height: 100vh;
+
+    .how-it-works {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: rgba(0, 0, 0, 0.9);
+        padding-top: 5rem;
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 4rem;
+            text-align: center;
+            width: 60rem;
+            @include respond(phone) {
+                width: 30rem;
+            }
+        
+        }
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 1.6rem;
+            margin-bottom: 3rem;
+
+            p {
+                padding: 3rem 4rem;
+                @include respond(phone) {
+                    font-size: 2rem; // 1rem = 9px; 9px / 16px = 56.25%
+                }
+            }
+        }
+
+        &__title {
+            font-size: 4rem;
+            @include respond(phone) {
+                font-size: 2.5rem; // 1rem = 9px; 9px / 16px = 56.25%
+            }
+        }
+
+        &__icon {
+            height: 3rem;
+            fill: #5558FF;
+        }
+
+    }
+}
+
+.main-odd {
+    background-color: #FF6363;
+
+    .how-it-works {
+        color: #fff;
+
+        &__icon {
+            height: 3rem;
+            fill: #fff;
+            color: #fff;
+        }
+    }
+}
+
+.main-last {
+    min-height: 94vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+
+        @include respond(phone) {
+            text-align: center;
+        }
+    }
+
+    .arrow {
+        font-size: 2rem;
+    }
+}
+
+.coming-soon {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #5558FF;
+
+    &__main {
+        padding: 0 55rem;
+        @include respond(phone) {
+            padding: 0 5rem;
+        }
+    }
+    
+
+    &__title {
+        margin-top: 10rem;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        @include respond(phone) {
+            font-size: 2rem;
+        }
+    }
+
+    &__content {
+        font-size: 2rem;
+        @include respond(phone) {
+            font-size: 2rem;
+        }
+    }
+
+    &__last-content {
+        margin-top: 2rem;
+        font-size: 2rem;
+        @include respond(phone) {
+            font-size: 2rem;
+        }
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*the container must be positioned relative:*/
+    .box select {
+        background-color: #fff;
+        color: #757575;
+        padding: 12px;
+        min-width: 25rem;
+        border: none;
+        font-size: 1.6rem;
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+        -webkit-appearance: button;
+        appearance: button;
+        outline: none;
+        margin-top: 2rem;
+      }
+      
+      .box::before {
+        content: "\f13a";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 20%;
+        height: 100%;
+        text-align: center;
+        font-size: 2.6rem;
+        line-height: 45px;
+        color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(255, 255, 255, 0.1);
+        pointer-events: none;
+      }
+      
+      .box:hover::before {
+        color: rgba(255, 255, 255, 0.6);
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+      
+      .box select option {
+        padding: 30px;
+      }
+
+      input[type=email] {
+        // width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 2rem;
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+      }
+
+      input[type=submit] {
+        background-color: #FF6363;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        margin-top: 2rem;
+        cursor: pointer;
+      }
+}
+
+.alert {
+    font-size: 1.4rem;
+    background: #6BBD6E;
+    color: #fff;
+    padding: 1rem;
+    margin: 1rem 0;
+
+    ul {
+        li {
+            list-style: circle;
+        }
+    }
+
+    &-success {
+        background: #6BBD6E;
+    }
+
+    &-danger {
+        background: #f44336;
+    }
+}

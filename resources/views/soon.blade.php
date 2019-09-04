@@ -34,7 +34,7 @@
                 </form>
             </div>
             <p class="coming-soon__last-content">
-                Also happy to answer any questions you have! just drop as email in <a href="mailto:alexinformationtech@gmail.com?subject=Inquiry for Dragship">alexinformationtech@gmail.com</a>
+                Also happy to answer any questions you have! just drop as email in <a href="mailto:thedragship@gmail.com?subject=Inquiry for Dragship">thedragship@gmail.com</a>
             </p>
         </div>
     </section>

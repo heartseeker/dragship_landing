@@ -9,7 +9,7 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/css/app.css">
-        <link rel="shortcut icon" href="/images/logo.ico">
+        <link rel="shortcut icon" href="/images/favicon.ico">
     </head>
     <body>
         @include('header')

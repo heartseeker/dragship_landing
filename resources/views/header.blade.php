@@ -6,12 +6,14 @@
         </div>
     </a>
 
-    <ul class="menu">
-        <a class="menu__item" href="#reseller">
-            <li>Reseller</li>
-        </a>
-        <a class="menu__item" href="#distributor">
-            <li>Distributor</li>
-        </a>
-    </ul>
+    @if(!Request::is('coming-soon'))
+        <ul class="menu">
+            <a class="menu__item" href="#reseller">
+                <li>Reseller</li>
+            </a>
+            <a class="menu__item" href="#distributor">
+                <li>Distributor</li>
+            </a>
+        </ul>
+    @endif
 </header>

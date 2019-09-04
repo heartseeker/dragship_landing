@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
+use Illuminate\Support\Facades\Route;
 
 class NoticeController extends Controller
 {
@@ -14,6 +15,7 @@ class NoticeController extends Controller
      */
     public function index()
     {
+        echo Route::getFacadeRoot()->current()->uri();
         return view('soon');
     }
 
@@ -40,11 +42,6 @@ class NoticeController extends Controller
      */
     public function store(Request $request)
     {   
-        // $request->validate([
-        //     'email' => 'required|unique:users|max:255',
-        //     'user_type' => 'required',
-        // ]);
-
         $this->validate(
             $request, 
             [

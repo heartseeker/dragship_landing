@@ -30,7 +30,7 @@
                         <option value="2">Distributor</option>
                     </select>
                     <input type="email" id="email" name="email" placeholder="Your Email Address">
-                    <input type="submit" value="Remind Me">
+                    <input class="btn" type="submit" value="Remind Me">
                 </form>
             </div>
             <p class="coming-soon__last-content">

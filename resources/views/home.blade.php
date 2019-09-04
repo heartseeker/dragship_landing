@@ -30,7 +30,7 @@
                     <svg class="how-it-works__icon">
                         <use xlink:href="/images/icomoon/sprite.svg#icon-search"></use>
                     </svg>
-                    <p>Find products that you want to sell and earn commission base on how many products you sold</p>
+                    <p>Search products that you want to sell and earn commission base on how many products you sold</p>
                 </div>
 
                 <div class="how-it-works__item">
@@ -62,7 +62,7 @@
                         <svg class="how-it-works__icon">
                             <use xlink:href="/images/icomoon/sprite.svg#icon-search"></use>
                         </svg>
-                        <p>Find a variety of resellers from our list or let resellers find you</p>
+                        <p>Search a variety of resellers from our list or let resellers find you</p>
                     </div>
     
                     <div class="how-it-works__item">
